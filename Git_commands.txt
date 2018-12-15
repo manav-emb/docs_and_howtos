@@ -1,0 +1,46 @@
+GIT Commands:
+
+git clone http://cworth.org/git/hello
+
+* git config user.name <name> //global configure git repo
+* git init //Create a new git repo
+* git clone //checkout a git repo
+* git add //add files to commit
+* git commit -a //commit files to local repo
+* git push origin master //Send changes to the master branch of your remote repository
+* git status //list the status of changes and files
+* git branch //list all the branches
+* git checkout -b <branchname> //Create a new branch and switch to it:
+* git checkout <branchname> //Switch from one branch to another:
+* git pull //Fetch and merge changes on the remote server to your working directory:
+* git diff //view all conflict
+* git log //check commit ids and msgs
+* git show //to show more info about change and commit id
+* git checkout . //remove all local chnages
+
+=======
+
+* git reset //Resets your index and working directory to the state of your last commit. Example: git reset --hard HEAD
+* git stash //Temporarily saves changes that you don’t want to commit immediately. You can apply the changes later. 
+            Example: git stash Saved working directory and index state "WIP on master: 84f241e first commit" HEAD is now at 84f241e first commit (To restore them type "git stash apply")
+* git fetch //Fetches all the objects from the remote repository that are not present in the local one. Example: git fetch origin
+* git remote //Shows all the remote versions of your repository. Example: git remote origin
+* git merge //To merge a different branch into your active branch:
+* git revert //Revert remote changes
+
+To change git editor (as an example vim):
+* git config --global core.editor "vim"
+
+
+
+* basename `readlink /sys/class/net/eth0/device/driver/module`
+* find -type f -name Makefile | xargs grep pl2303
+* Platform devices are inherently not discoverable, i.e. the hardware cannot say "Hey! I'm present!" to the software. Typical examples are i2c devices
+* So basically, the question "is it a platform device or a standard device?" is more a question of which bus it uses.
+
+To remove the non-printing character use the following command as below :
+
+$ cat  'test.c' | tr -dc [\\n,[:print:]]> new_test.c
+
+Now the source code is redirected to the new file "new_test.c" which is free from non-printing characters.
+
